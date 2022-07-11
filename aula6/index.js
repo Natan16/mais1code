@@ -12,5 +12,6 @@ $.ajax({
       $('#showresults').append("<span>"+response["matches"][i]["homeTeam"]["name"]+"</span>")
       $('#showresults').append("<span> ("+response["matches"][i]["score"]["fullTime"]["homeTeam"]+")</span><br><br>")
     }
+    // usar o clone e o appendTo
       console.log(response);
   });

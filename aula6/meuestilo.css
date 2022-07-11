@@ -1,0 +1,20 @@
+div, p {
+    color: purple; 
+    margin: 100px 100px 100px 100px;
+    padding: 10px 10px 10px 10px;
+    border: 1vh solid red;
+    text-align: center;
+    font-size: 16px;
+    /* border-width: 1px; */
+    /* border-style: none; */
+    /* border-color: red; */
+}
+/* div, p {
+    color: red;
+} */
+/* #minhaNuvem {
+    color: blue;
+}
+.verdona {
+    color: green;
+} */
