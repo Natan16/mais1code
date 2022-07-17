@@ -9,7 +9,7 @@
     <style>
         .container {
             width: 900px;
-            margin: 16px auto;
+            margin: 32px auto 16px auto;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
         .header {
@@ -36,7 +36,6 @@
             padding: 16px;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
-            /* talvez aqui tenha de ser flex tbm, ou grid */
         }
         .card:hover {
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -65,10 +64,97 @@
     <!-- <script src="index.js"></script> -->
 </head>
 <body>
+    <!-- uma barra de header que vai ficar sticky e me leva até onde eu quiser -->
     <div class="container">
         <div class="header">
-            <h1 class="title">Brasileirão Série A</h1>
+            <span>
+                <img src="https://crests.football-data.org/764.svg" style="border-radius: 50%; object-fit: cover;" width="84px" height="64px">
+                <h1 class="title">Brasileirão Série A</h1>
+            </span>
             <h2 class="subtitle">Rodada 17</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="time">
+                    <img src="img/santos.png" width="32" >
+                    <span class="nome">Santos</span>
+                    <span class="placar placar-vencedor">
+                        2
+                    </span>
+                    <i class="material-icons" style="width: 0px;">arrow_left</i>
+                </div>
+                <div class="time">
+                    <img src="img/fluminense.png" width="32">
+                    <span class="nome">Fluminense</span>
+                    <span class="placar">0</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="time">
+                    <img src="img/santos.png" width="32" >
+                    <span class="nome">Santos</span>
+                    <span class="placar placar-vencedor">
+                        2
+                    </span>
+                    <i class="material-icons" style="width: 0px;">arrow_left</i>
+                </div>
+                <div class="time">
+                    <img src="img/fluminense.png" width="32">
+                    <span class="nome">Fluminense</span>
+                    <span class="placar">0</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="time">
+                    <img src="img/santos.png" width="32" >
+                    <span class="nome">Santos</span>
+                    <span class="placar placar-vencedor">
+                        2
+                    </span>
+                    <i class="material-icons" style="width: 0px;">arrow_left</i>
+                </div>
+                <div class="time">
+                    <img src="img/fluminense.png" width="32">
+                    <span class="nome">Fluminense</span>
+                    <span class="placar">0</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="time">
+                    <img src="img/santos.png" width="32" >
+                    <span class="nome">Santos</span>
+                    <span class="placar placar-vencedor">
+                        2
+                    </span>
+                    <i class="material-icons" style="width: 0px;">arrow_left</i>
+                </div>
+                <div class="time">
+                    <img src="img/fluminense.png" width="32">
+                    <span class="nome">Fluminense</span>
+                    <span class="placar">0</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="time">
+                    <img src="img/santos.png" width="32" >
+                    <span class="nome">Santos</span>
+                    <span class="placar placar-vencedor">
+                        2
+                    </span>
+                    <i class="material-icons" style="width: 0px;">arrow_left</i>
+                </div>
+                <div class="time">
+                    <img src="img/fluminense.png" width="32">
+                    <span class="nome">Fluminense</span>
+                    <span class="placar">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="copaAmerica">
+        <div class="header">
+            <h1 class="title">Copa América</h1>
+            <h2 class="subtitle">Oitavas de Final</h2>
         </div>
         <div class="card-container">
             <div class="card">
