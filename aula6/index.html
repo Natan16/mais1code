@@ -7,9 +7,47 @@
     <title>Placar na hora</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
+        * {
+            margin:0;
+            padding:0;
+            border:0;
+        }
+        .wrapper-aconras {
+            align-items: flex-end;
+            flex: 40%;
+            margin: 0px auto;
+        }
+        a {
+            color: white;
+            padding: 16px;
+            font-size: large;
+            /* align-items: center; */
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+            background-color: var(--primary);
+            border-bottom: 4px solid white;
+            box-sizing: border-box;
+            
+            
+        }
         :root {
-            --primary:#06c;
-            /* --secondary:  */
+            --primary:#3f51b5;
+            --cabecalho: #002984; 
+        }
+        .cabecalho {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top:0;
+            left: 0;
+            height: 100px;
+            width: 100%;
+            background-color: var(--cabecalho);
+
         }
         .container {
             width: 900px;
@@ -22,6 +60,7 @@
         }
         .title{
             color: rgb(255, 255, 255);
+            flex: 60%;
         }
         .subtitle{
             color: lightgray;
@@ -48,7 +87,7 @@
         .time {
             margin: 4px 0px 4px 4px;
             display: flex;
-            flex-direction: row;
+            /* flex-direction: row; */
             height: 32px;
             align-items: center;
         }
@@ -68,8 +107,17 @@
     <!-- <script src="index.js"></script> -->
 </head>
 <body>
-    <!-- uma barra de header que vai ficar sticky e me leva até onde eu quiser -->
-    <div class="container">
+    <div class="cabecalho">
+        <h1 class="title">
+            Principais Jogos
+        </h1>
+        <span class="wrapper-aconras">
+            <a href="#brasileirao">Brasileirão Série A</a>
+            <a href="#copaAmerica">Copa América</a>
+            <a href="#champions">Champions League</a>
+        </span>
+    </div>
+    <div id="brasileirao" class="container" style="margin-top: 128px;">
         <div class="header">
             <span>
                 <img src="https://crests.football-data.org/764.svg" style="border-radius: 50%; object-fit: cover;" width="84px" height="64px">
@@ -155,7 +203,90 @@
             </div>
         </div>
     </div>
-    <div class="container" id="copaAmerica">
+    <div id="copaAmerica" class="container" >
+        <div class="header">
+            <h1 class="title">Copa América</h1>
+            <h2 class="subtitle">Oitavas de Final</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="time">
+                    <img src="img/santos.png" width="32" >
+                    <span class="nome">Santos</span>
+                    <span class="placar placar-vencedor">
+                        2
+                    </span>
+                    <i class="material-icons" style="width: 0px;">arrow_left</i>
+                </div>
+                <div class="time">
+                    <img src="img/fluminense.png" width="32">
+                    <span class="nome">Fluminense</span>
+                    <span class="placar">0</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="time">
+                    <img src="img/santos.png" width="32" >
+                    <span class="nome">Santos</span>
+                    <span class="placar placar-vencedor">
+                        2
+                    </span>
+                    <i class="material-icons" style="width: 0px;">arrow_left</i>
+                </div>
+                <div class="time">
+                    <img src="img/fluminense.png" width="32">
+                    <span class="nome">Fluminense</span>
+                    <span class="placar">0</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="time">
+                    <img src="img/santos.png" width="32" >
+                    <span class="nome">Santos</span>
+                    <span class="placar placar-vencedor">
+                        2
+                    </span>
+                    <i class="material-icons" style="width: 0px;">arrow_left</i>
+                </div>
+                <div class="time">
+                    <img src="img/fluminense.png" width="32">
+                    <span class="nome">Fluminense</span>
+                    <span class="placar">0</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="time">
+                    <img src="img/santos.png" width="32" >
+                    <span class="nome">Santos</span>
+                    <span class="placar placar-vencedor">
+                        2
+                    </span>
+                    <i class="material-icons" style="width: 0px;">arrow_left</i>
+                </div>
+                <div class="time">
+                    <img src="img/fluminense.png" width="32">
+                    <span class="nome">Fluminense</span>
+                    <span class="placar">0</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="time">
+                    <img src="img/santos.png" width="32" >
+                    <span class="nome">Santos</span>
+                    <span class="placar placar-vencedor">
+                        2
+                    </span>
+                    <i class="material-icons" style="width: 0px;">arrow_left</i>
+                </div>
+                <div class="time">
+                    <img src="img/fluminense.png" width="32">
+                    <span class="nome">Fluminense</span>
+                    <span class="placar">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="champions" class="container" >
         <div class="header">
             <h1 class="title">Copa América</h1>
             <h2 class="subtitle">Oitavas de Final</h2>
