@@ -1,6 +1,5 @@
 
 function calcular_formulas() {
-    console.log()
     const a = parseInt(document.getElementById("a").value)
     const b = parseInt(document.getElementById("b").value)
     const c = parseFloat(document.getElementById("c").value)
